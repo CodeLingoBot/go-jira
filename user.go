@@ -126,7 +126,7 @@ func (s *UserService) GetGroups(username string) (*[]UserGroup, *Response, error
 	return userGroups, resp, nil
 }
 
-// Get information about the current logged-in user
+// GetSelf gets information about the current logged-in user
 //
 // JIRA API docs: https://developer.atlassian.com/cloud/jira/platform/rest/#api-api-2-myself-get
 func (s *UserService) GetSelf() (*User, *Response, error) {
